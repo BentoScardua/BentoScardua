@@ -1,15 +1,31 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    color: #333;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos para o Header */
 header {
     background-color: #0044cc;
     color: #fff;
-    padding: 1em 0;
+    padding: 1.5em 0;
     text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5em;
 }
 
 nav ul {
@@ -25,18 +41,118 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
-main {
-    padding: 2em;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-section {
-    margin-bottom: 2em;
-}
-
-footer {
-    background-color: #f1f1f1;
+/* Estilos para o Hero */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 4em 0;
     text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.btn-primary {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #cc5200;
+}
+
+/* Estilos para as Seções */
+section {
+    padding: 2em 0;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.about, .services, .resources, .contact {
+    background-color: #f4f4f4;
+    padding: 2em 0;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services ul li {
+    background: #fff;
+    margin: 0.5em 0;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #0044cc;
+    color: #fff;
+    padding: 0.7em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0033aa;
+}
+
+address {
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* Estilos para o Footer */
+footer {
+    background-color: #333;
+    color: #fff;
     padding: 1em 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
 }
